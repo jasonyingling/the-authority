@@ -16,3 +16,19 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+config.codekit
+config.codekit3
+.sass-cache
+node_modules
+bower_components
+
+# Operating system files
+.Spotlight-V100
+.Trashes
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+
+# Vagrant
+.vagrant
