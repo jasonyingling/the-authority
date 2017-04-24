@@ -1,0 +1,265 @@
+.entry-after-first {
+	margin-bottom: 60px;
+
+	.widget-title {
+		margin-top: 0;
+	}
+}
+
+.widget-title {
+	@include font-size(1.5);
+	display: block;
+	color: $color__secondary;
+	text-transform: uppercase;
+	margin: 0.5em 0;
+}
+
+.widget {
+	margin: 0 0 1em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+/* Search widget. */
+.widget_search {
+	form {
+		@include display(flex);
+
+		label {
+			@include flex-grow(1);
+		}
+	}
+	input[type="search"] {
+		width: 100%;
+		padding: .5em .5em;
+		box-sizing: border-box;
+		border-radius: 0;
+	}
+
+	.search-submit {
+		display: inline-block;
+		border-radius: 0px 3px 3px 0px;
+	}
+}
+
+/* Recent Entries widget. */
+.widget_recent_entries {
+
+	.recent_posts_flex {
+		@include display(flex);
+	}
+
+	.recent_posts_thumb {
+		@include span-columns(2.5);
+
+		img {
+			display: block;
+			border-radius: 100px;
+		}
+	}
+
+	.recent_posts_thumb_content {
+		@include span-columns(9.5);
+		@include display(flex);
+		@include align-items(center);
+		@include flex-flow(row wrap);
+		padding-left: 10px;
+	}
+
+	ul {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	li {
+		@include clearfix;
+		width: 100%;
+		list-style-type: none;
+	}
+
+	a {
+		display: block;
+		clear: both;
+	}
+
+	.post-date {
+		@include font-size(.75);
+		text-transform: uppercase;
+		color: $color__secondary;
+		display: block;
+		clear: both;
+		line-height: 1;
+	}
+}
+
+/* Archive and Category Widget. */
+.widget_archive,
+.widget_categories {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+
+		ul {
+			display: inline-block;
+			margin-left: 5px;
+		}
+
+		li {
+			display: inline-block;
+			@include font-size(.75);
+		}
+
+		a {
+			color: $white;
+			@include font-size(.75);
+			background: $color__secondaryShade;
+			padding: 5px 7px;
+			text-transform: uppercase;
+			margin-right: 5px;
+			word-break: none;
+			display: inline-block;
+			margin-bottom: 5px;
+			border-radius: 3px;
+
+			&:hover {
+				background: $color__primary;
+			}
+		}
+	}
+}
+
+/* Pages Widget */
+.widget_pages {
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		ul {
+			padding: 0 0 0 1.5em;
+		}
+	}
+}
+
+/* Recent Comments Widget */
+.widget_recent_comments {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* Calendar Widget */
+.widget_calendar {
+	@include font-size(1);
+	position: relative;
+
+	thead {
+		background: $color__primary;
+		color: $white;
+		font-weight: 300;
+	}
+
+	tbody {
+		text-align: center;
+
+		td {
+			padding: 5px;
+			border-width: 0px;
+			border-style: inset;
+		}
+	}
+
+	tfoot {
+		td {
+			padding-top: 10px;
+		}
+		#next {
+			text-align: right;
+		}
+	}
+
+	caption {
+		@include font-size(1.25);
+
+		margin-bottom: .75em;
+		text-align: left;
+		color: $color__secondary;
+		text-transform: uppercase;
+		position: relative;
+	}
+}
+
+/* Social Widget */
+.widget_thepine_social_widget {
+	li {
+		@include span-columns(2);
+		@include omega(6n);
+		margin-bottom: 10px;
+
+		a {
+			color: $white;
+			background-color: $color__secondary;
+			width: 51px;
+			height: 51px;
+			font-size: 19px;
+			line-height: 52px;
+
+			@include media($desktop) {
+				width: 4vw;
+				height: 4vw;
+				font-size: 1.5vw;
+				line-height: 2.75;
+			}
+
+			@include media($mobile) {
+				width: 14vw;
+				height: 14vw;
+				font-size: 5vw;
+				line-height: 2.8;
+			}
+
+			&:hover {
+				color: $color__secondaryTint;
+				//background-color: $color__grayHover;
+			}
+		}
+	}
+}
+
+.widget-area {
+	.widget_thepine_social_widget {
+		a {
+			@include media($tablet) {
+				width: 13vw;
+				height: 13vw;
+				font-size: 5vw;
+				line-height: 2.6;
+			}
+		}
+	}
+}
+
+.footer-aside {
+	.wpcf7-form {
+		input {
+			border-radius: 0;
+			//background-color: $color__grayHover;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="number"],
+		input[type="tel"],
+		input[type="date"] {
+			border-width: 0;
+			width: 100%;
+		}
+	}
+}

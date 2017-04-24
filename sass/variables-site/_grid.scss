@@ -1,0 +1,11 @@
+// Define your breakpoints
+$mobile: new-breakpoint(max-width 640px 4);
+$tablet: new-breakpoint(max-width 768px 8);
+$break960: new-breakpoint(max-width 960px 12);
+$break1023: new-breakpoint(max-width 1023px 12);
+$desktop: new-breakpoint(max-width 1280px 12);
+
+%post {
+	@include outer-container;
+	@include clearfix;
+}

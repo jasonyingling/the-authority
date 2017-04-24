@@ -1,0 +1,33 @@
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+	margin-left: -30px;
+
+	@include media($tablet) {
+		margin-left: -20px;
+	}
+
+	@include media($mobile) {
+		margin-left: 0;
+	}
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+	margin-right: -30px;
+
+	@include media($tablet) {
+		margin-right: -20px;
+	}
+
+	@include media($tablet) {
+		margin-right: 0;
+	}
+}
+
+.aligncenter {
+	@include center-block;
+}

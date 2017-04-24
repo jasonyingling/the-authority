@@ -1,0 +1,27 @@
+$color__primary: #f46060;
+$color__primaryShade: #ab4343;
+$color__primaryTint: #f78f8f;   //not used
+
+$color__secondary: #2e3641;
+$color__secondaryShade: #a3a1a1;
+$color__secondaryTint: #efeded;
+
+$white: #ffffff;
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;     // only used for accessibility
+$color__background-hr: $color__secondaryShade;
+$color__background-button: $color__secondaryTint;
+$color__background-pre: #eee;   //pre
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;   // accessibility
+$color__text-input: #666;
+$color__text-input-focus: $color__secondary;
+$color__link: $color__primary;
+$color__link-visited: $color__primary;
+$color__link-hover: $color__primaryShade;
+$color__text-main: $color__secondary;
+
+$color__border-input: #ccc;
+$color__border-abbr: #666;

@@ -1,0 +1,163 @@
+.comments-section {
+	background-color: $color__secondaryTint;
+	padding: 40px 0;
+	margin-top: 60px;
+}
+
+.comments-area {
+	@include media($mobile) {
+		padding: 0 10px;
+	}
+}
+
+#disqus_thread {
+	max-width: 43rem;
+	margin: 0 auto;
+	padding: 0 40px;
+
+	@include media($mobile) {
+		padding: 0 20px;
+	}
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+.comments-title {
+	@include font-size(1.25);
+}
+
+.comment-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	.comment,
+	.pingback {
+		border: 1px solid $color__secondaryShade;
+	}
+
+	> li {
+		background-color: $white;
+		padding: 30px;
+		margin: 30px 0;
+
+		@include media($mobile) {
+			padding: 15px;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.children {
+		list-style-type: none;
+		margin-top: 1em;
+		padding-right: 0;
+
+		li {
+			border: 1px solid $color__secondaryTint;
+			padding: 15px;
+		}
+	}
+
+	article {
+		background-color: transparent;
+	}
+
+	.comment-author {
+		line-height: 1;
+
+		img {
+			border-radius: 100px;
+			float: left;
+			margin: 0 20px 20px 0;
+		}
+	}
+
+	.comment-metadata {
+		@include font-size(.875);
+		font-style: italic;
+	}
+
+	.comment-awaiting-moderation {
+		font-style: italic;
+	}
+}
+
+/* Comments Form */
+.comment-reply-title {
+	margin-bottom: 0;
+}
+
+.comment-notes {
+	font-style: italic;
+	@include font-size(.875);
+	margin-top: 5px;
+}
+
+.comment-form {
+	.comment-form-author {
+		@include span-columns(6);
+
+		@include media($mobile) {
+			@include span-columns(4);
+		}
+	}
+
+	.comment-form-email {
+		@include span-columns(6);
+		@include omega();
+
+		@include media($mobile) {
+			@include span-columns(4);
+		}
+	}
+
+	.comment-form-url {
+		@include span-columns(12);
+		margin-top: 0;
+	}
+
+	.comment-form-comment {
+		@include span-columns(12);
+		margin: 0;
+	}
+
+	label {
+		font-style: italic;
+		display: block;
+		//color: $color__grayHover;
+		margin-bottom: 5px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"] {
+		height: 40px;
+		border: none;
+		border-radius: 0;
+		padding: 0 10px;
+		width: 100%;
+	}
+
+	textarea {
+		border: none;
+		border-radius: 0;
+		padding: 10px;
+		width: 100%;
+	}
+
+	.form-allowed-tags {
+		font-style: italic;
+		@include font-size(.875);
+		//color: $color__grayHover;
+		margin-top: 0;
+	}
+
+}

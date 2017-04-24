@@ -1,0 +1,148 @@
+// Make sure to include widgets styles
+
+.site-footer {
+    @include font-size(0.875);
+    background: $color__secondary;
+    padding: 20px 0;
+    color: $white;
+}
+
+.site-footer .widget_pages {
+    > ul {
+        > li {
+            margin-top: 10px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        li {
+            float: none;
+            width: 100%;
+        }
+    }
+}
+
+.footer-navigation {
+    padding: 20px 0 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.33);
+
+    li {
+        margin-right: 2em;
+        float: left;
+    }
+}
+
+.footer-navigation,
+.site-footer .widget_pages,
+.site-footer .widget_nav_menu {
+    display: block;
+    width: 100%;
+
+    ul {
+        @include clearfix;
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+
+            a {
+                color: $white;
+
+                &:hover {
+                    color: $color__primary;
+                }
+            }
+
+            ul {
+                @include font-size(0.875);
+                margin-top: 0.5em;
+                padding-left: 0;
+                font-style: italic;
+
+                li {
+                    float: none;
+                    margin-right: 0;
+
+                    a {
+                        opacity: 0.5;
+
+                        &:hover {
+                            color: $color__primary;
+                            opacity: 1;
+                        }
+                    }
+
+                    ul {
+                        padding-left: 0.75em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.site-footer {
+    .site-info {
+        @include font-size(0.875);
+        display: block;
+        clear: both;
+
+        a {
+            color: $white;
+
+            &:hover {
+                color: $color__primary;
+            }
+        }
+
+        .aty-separator {
+            margin: 0 3px;
+        }
+    }
+}
+
+.footer-widgets {
+    @include clearfix;
+    width: 100%;
+    padding-bottom: 20px;
+
+    .footer-widget {
+        @include span-columns(4);
+
+        @include media($mobile) {
+            @include span-columns(4);
+        }
+
+        aside {
+            margin-top: 30px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .widget-title {
+        color: $white;
+    }
+
+    .widget_archive,
+    .widget_categories {
+        ul {
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    .widget_calendar {
+        caption {
+            @include font-size(1.5);
+            font-weight: 300;
+            color: $white;
+        }
+    }
+}

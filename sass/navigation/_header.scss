@@ -1,0 +1,148 @@
+.site-header {
+    font-family: $font__title;
+	-webkit-font-smoothing: antialiased;
+    //background-color: $color__primary;
+    background-color: $color__secondary;
+
+    .container {
+        @include display(flex);
+        @include align-items(center);
+        position: relative;
+    }
+}
+
+.site-branding {
+    @include flex-grow(1);
+    padding: 0.5em 0;
+
+    img {
+        display: block;
+        max-width: 300px;
+
+        @include media($mobile) {
+            max-width: 200px;
+        }
+    }
+}
+
+#site-title {
+    @include font-size(2.25);
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            color: $color__primary;
+        }
+    }
+}
+
+.site-description {
+    @include font-size(0.875);
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: $white;
+}
+
+.secondary-header {
+    //background: $color__primaryShade;
+    background: $color__primary;
+    font-family: $font__title;
+	-webkit-font-smoothing: antialiased;
+}
+
+.secondary-aside {
+    float: right;
+}
+
+.site-search {
+    float: left;
+
+    .site-search-button {
+        @include font-size(.875);
+        font-family: $font__title;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        text-shadow: none;
+        color: $white;
+        padding: 0;
+        margin-right: 0;
+        width: 86px;
+        text-align: right;
+
+        &:hover {
+            color: $color__primaryShade;
+        }
+
+        span {
+            margin-left: 0.75em;
+        }
+    }
+}
+
+.aty-edd-cart {
+    float: left;
+    margin-left: 1em;
+
+    a {
+        @include font-size(1);
+        color: $white;
+
+        &:visited {
+            color: $white;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color__primaryShade;
+        }
+    }
+
+    .edd-cart-quantity {
+        @include font-size(0.75);
+    }
+}
+
+.site-search-dropdown {
+    display: none;
+    background: $color__secondary;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding: 3em 0;
+    z-index: 2;
+
+    form {
+        @include display(flex);
+    }
+
+    input[type="search"] {
+        @include flex-grow(1);
+        padding: 1em;
+        border-radius: 0;
+    }
+
+    button {
+        @include font-size(1.25);
+        background: $color__primary;
+        color: $white;
+        box-shadow: none;
+        text-shadow: none;
+        border: 0;
+        border-radius: 0;
+        padding: 1em;
+
+        &:hover {
+            background: $color__primaryShade;
+        }
+
+        span {
+            margin-left: 0.75em;
+        }
+    }
+}

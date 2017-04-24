@@ -1,0 +1,23 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include font-size(1);
+	border-color: $color__primary;
+	background: $color__primary;
+	border-width: 0px;
+	border-radius: 3px;
+	padding: 10px 15px;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-right: 10px;
+
+	&:hover {
+		background: $color__primaryShade;
+	}
+
+	&:active,
+	&:focus {
+		background: $color__primaryShade;
+	}
+}
