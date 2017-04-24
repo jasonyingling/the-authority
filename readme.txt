@@ -4,7 +4,7 @@ Contributors: yingling017
 Tags: translation-ready, custom-background, theme-options, custom-menu, threaded-comments, editor-style, featured-images, one-column, two-column, right-sidebar, footer-widgets, custom-logo
 
 Requires at least: 4.0
-Tested up to: 4.7.3
+Tested up to: 4.7.4
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
