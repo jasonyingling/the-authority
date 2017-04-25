@@ -58,100 +58,94 @@ function the_authority_customize_register( $wp_customize ) {
 	// Add Color Settings
 	$wp_customize->add_setting( 'primary_link', array(
 	 	'default' => '#f46060',
-		'sanatize_callback' => 'sanatize_hex_color',
+		'sanitize_callback' => 'sanitize_hex_color',
 		'transport'			=> 'postMessage',
 	 ) );
 
-	//  $wp_customize->add_setting( 'primary_color', array(
- // 	 	'default' => '#f46060',
- // 		'sanatize_callback' => 'sanatize_hex_color',
- // 		'transport'			=> 'postMessage',
- // 	 ) );
-
 	 $wp_customize->add_setting( 'primary_hover', array(
  	 	'default' => '#ab4343',
- 		'sanatize_callback' => 'sanatize_hex_color',
+ 		'sanitize_callback' => 'sanitize_hex_color',
  	 ) );
 
  	 $wp_customize->add_setting( 'secondary_shade', array(
   	 	'default' => '#a3a1a1',
-  		'sanatize_callback' => 'sanatize_hex_color',
+  		'sanitize_callback' => 'sanitize_hex_color',
   		'transport'			=> 'postMessage',
   	 ) );
 
 	 $wp_customize->add_setting( 'copy_color', array(
 	   'default' => '#2e3641',
-	   'sanatize_callback' => 'sanatize_hex_color',
+	   'sanitize_callback' => 'sanitize_hex_color',
 	   'transport'			=> 'postMessage',
 	) );
 
 	$wp_customize->add_setting( 'header_background', array(
 	 	'default' => '#2e3641',
-		'sanatize_callback' => 'sanatize_hex_color',
+		'sanitize_callback' => 'sanitize_hex_color',
 		'transport'			=> 'postMessage',
 	 ) );
 
 	 $wp_customize->add_setting( 'header_accents', array(
  	 	'default' => '#f46060',
- 		'sanatize_callback' => 'sanatize_hex_color',
+ 		'sanitize_callback' => 'sanitize_hex_color',
  	 ) );
 
 	 $wp_customize->add_setting( 'sec_header_background', array(
  	 	'default' => '#f46060',
- 		'sanatize_callback' => 'sanatize_hex_color',
+ 		'sanitize_callback' => 'sanitize_hex_color',
  		'transport'			=> 'postMessage',
  	 ) );
 
 	 $wp_customize->add_setting( 'sec_header_text', array(
  	 	'default' => '#ffffff',
- 		'sanatize_callback' => 'sanatize_hex_color',
+ 		'sanitize_callback' => 'sanitize_hex_color',
  		'transport'			=> 'postMessage',
  	 ) );
 
 	 $wp_customize->add_setting( 'sec_header_text_hover', array(
  	 	'default' => '#ab4343',
- 		'sanatize_callback' => 'sanatize_hex_color',
+ 		'sanitize_callback' => 'sanitize_hex_color',
  	 ) );
 
 	 $wp_customize->add_setting( 'submenu_background', array(
  	 	'default' => '#ffffff',
- 		'sanatize_callback' => 'sanatize_hex_color',
+ 		'sanitize_callback' => 'sanitize_hex_color',
  		'transport'			=> 'postMessage',
  	 ) );
 
 	 $wp_customize->add_setting( 'submenu_text', array(
  	 	'default' => '#a3a1a1',
- 		'sanatize_callback' => 'sanatize_hex_color',
+ 		'sanitize_callback' => 'sanitize_hex_color',
  		'transport'			=> 'postMessage',
  	 ) );
 
 	 // Footer
 	 $wp_customize->add_setting( 'footer_primary_link', array(
  	 	'default' => '#f46060',
- 		'sanatize_callback' => 'sanatize_hex_color',
+ 		'sanitize_callback' => 'sanitize_hex_color',
  		'transport'			=> 'postMessage',
  	 ) );
 
 	 $wp_customize->add_setting( 'footer_primary_hover', array(
  	 	'default' => '#ab4343',
- 		'sanatize_callback' => 'sanatize_hex_color',
+ 		'sanitize_callback' => 'sanitize_hex_color',
  	 ) );
 
  	 $wp_customize->add_setting( 'footer_secondary_shade', array(
   	 	'default' => '#a3a1a1',
-  		'sanatize_callback' => 'sanatize_hex_color',
+  		'sanitize_callback' => 'sanitize_hex_color',
   		'transport'			=> 'postMessage',
   	 ) );
 
 	 $wp_customize->add_setting( 'footer_copy_color', array(
 	   'default' => '#ffffff',
-	   'sanatize_callback' => 'sanatize_hex_color',
+	   'sanitize_callback' => 'sanitize_hex_color',
 	   'transport'			=> 'postMessage',
 	) );
 
 	$wp_customize->add_setting( 'footer_background', array(
 	 	'default' => '#2e3641',
-		'sanatize_callback' => 'sanatize_hex_color',
+		'sanitize_callback' => 'sanitize_hex_color',
 		'transport'			=> 'postMessage',
 	 ) );
 
@@ -281,17 +275,6 @@ function the_authority_customize_register( $wp_customize ) {
 			 'settings'		=> 'copy_color'
 		 ) )
 	);
-
-	// $wp_customize->add_control(
-	// 	new WP_Customize_Color_Control (
-	// 	$wp_customize,
-	// 	'primary_color',
-	// 	 array(
-	// 		 'label'		=> __( 'Primary', 'the-authority' ),
-	// 		 'section'		=> 'site_colors',
-	// 		 'settings'		=> 'primary_color'
-	// 	 ) )
-	// );
 
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control (
