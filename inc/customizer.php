@@ -19,9 +19,6 @@ function the_authority_customize_register( $wp_customize ) {
 	$wp_customize->get_control( 'header_textcolor' )->section = 'header_colors';
 	$wp_customize->get_control( 'background_color' )->section = 'site_colors';
 
-	// Remove header image setting
-	$wp_customize->remove_section( 'header_image' );
-
 	// Create Theme Colors Panel
 	$wp_customize->add_panel( 'theme_colors', array(
 		'priority' 			=> 30,
@@ -148,8 +145,6 @@ function the_authority_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'sanitize_hex_color',
 		'transport'			=> 'postMessage',
 	 ) );
-
-
 
 	// Add Color Controls
 	$wp_customize->add_control(

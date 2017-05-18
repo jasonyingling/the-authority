@@ -115,7 +115,7 @@
     position: absolute;
     left: 0;
     padding: 3em 0;
-    z-index: 2;
+    z-index: 5;
 
     form {
         @include display(flex);
@@ -140,9 +140,14 @@
         &:hover {
             background: $color__primaryShade;
         }
+    }
+}
 
-        span {
-            margin-left: 0.75em;
-        }
+.aty-custom-header {
+    margin-bottom: 40px;
+
+    img {
+        display: block;
+        width: 100%;
     }
 }

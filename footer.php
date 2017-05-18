@@ -46,7 +46,7 @@
 				</nav>
 			<?php endif; ?>
 			<div class="site-info">
-				<p><span class="aty-copyright">&copy;</span> <?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo('name'); ?></a> <span class="aty-separator">|</span> <?php bloginfo('description'); ?></p>
+				<p><span class="aty-copyright">&copy;</span> <?php echo date_i18n(__('Y', 'the-authority')); ?> <a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo('name'); ?></a> <span class="aty-separator">|</span> <?php bloginfo('description'); ?></p>
 			</div><!-- .site-info -->
 		</div>
 	</footer><!-- #colophon -->

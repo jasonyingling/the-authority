@@ -36,10 +36,18 @@ And many more
 
 == Changelog ==
 
-= 1.0 - April 19 2017 =
+= 1.0 - May 11, 2017 =
 * Initial release
 
 == Credits ==
 
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+
+== Resources ==
+* jquery.mmenu.min.js © Fred Heusschen, MIT
+* Font Awesome Font License, SIL OFL 1.1
+* Font Awesome Code License, MIT
+* Freemius © Freemius, Inc., GPL
+* Bourbon © 2011-2015 thoughtbot, inc.
+* Bourbon.Neat © 2011-2015 thoughtbot, inc.

@@ -10,7 +10,6 @@ input[type="submit"] {
 	padding: 10px 15px;
     color: #ffffff;
     border-radius: 5px;
-    margin-right: 10px;
 
 	&:hover {
 		background: $color__primaryShade;
@@ -19,5 +18,11 @@ input[type="submit"] {
 	&:active,
 	&:focus {
 		background: $color__primaryShade;
+	}
+}
+
+.search-submit {
+	.fa-search {
+		margin-right: .5em;
 	}
 }

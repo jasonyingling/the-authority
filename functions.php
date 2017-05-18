@@ -62,18 +62,6 @@ function the_authority_setup() {
 	) );
 
 	/*
-	 * Enable support for Post Formats.
-	 * See https://developer.wordpress.org/themes/functionality/post-formats/
-	 */
-	add_theme_support( 'post-formats', array(
-		//'aside',
-		//'image',
-		//'video',
-		//'quote',
-		//'link',
-	) );
-
-	/*
 	 * Enable support for custom logo.
 	 */
 	add_theme_support( 'custom-logo', array(
@@ -82,8 +70,6 @@ function the_authority_setup() {
 		'flex-height' 	=> true,
 		'flex-width'  	=> true,
 	));
-
-
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'the_authority_custom_background_args', array(
@@ -192,13 +178,11 @@ add_action( 'widgets_init', 'the_authority_widgets_init' );
 function the_authority_scripts() {
 	wp_enqueue_style( 'the-authority-style', get_stylesheet_uri(), array(), '20170417' );
 
-	//wp_enqueue_script( 'the-authority-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-
 	wp_enqueue_script( 'the-authority-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	wp_enqueue_script( 'jquery-mmenu', get_template_directory_uri() . '/js/vendor/jquery.mmenu.min.js', array('jquery'), '20161220', true );
 
-	wp_enqueue_script( 'the-authority-scripts', get_template_directory_uri() . '/js/main.js', array('jquery'), '20160320', true );
+	wp_enqueue_script( 'the-authority-scripts', get_template_directory_uri() . '/js/min/main-min.js', array('jquery'), '20160320', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -244,7 +228,7 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 function the_authority_new_excerpt_more($more) {
 	global $post;
-	return '...<a class="excerpt-more-link" href="'. get_permalink($post->ID) . '">Read More</a>';
+	return '...<a class="excerpt-more-link" href="'. esc_url( get_permalink($post->ID) ) . '">Read More</a>';
 }
 add_filter('excerpt_more', 'the_authority_new_excerpt_more');
 
@@ -252,7 +236,7 @@ add_filter('excerpt_more', 'the_authority_new_excerpt_more');
  * Replaces the content "Read More" text with a link
  */
 function the_authority_modify_read_more_link() {
-    return '<a class="more-link" href="' . get_permalink() . '">Read More</a>';
+    return '<a class="more-link" href="' . esc_url( get_permalink() ) . '">Read More</a>';
 }
 add_filter( 'the_content_more_link', 'the_authority_modify_read_more_link' );
 

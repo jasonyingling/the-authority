@@ -27,13 +27,9 @@
 .widget_search {
 	form {
 		@include display(flex);
-
-		label {
-			@include flex-grow(1);
-		}
 	}
 	input[type="search"] {
-		width: 100%;
+		@include flex-grow(1);
 		padding: .5em .5em;
 		box-sizing: border-box;
 		border-radius: 0;

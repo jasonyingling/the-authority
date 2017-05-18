@@ -25,13 +25,11 @@ function the_authority_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( '%s', 'post date', 'the-authority' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark"><i class="fa fa-clock-o" aria-hidden="true"></i>' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		esc_html_x( '%s', 'post author', 'the-authority' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '"><i class="fa fa-user" aria-hidden="true"></i>' . esc_html( get_the_author() ) . '</a></span>'
+		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '"><i class="fa fa-user" aria-hidden="true"></i>' . esc_html( get_the_author(), 'the-authority' ) . '</a></span>'
 	);
 
 	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline">' . $byline . '</span>'; // WPCS: XSS OK.
@@ -59,7 +57,7 @@ function the_authority_entry_footer() {
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( '', 'the-authority' ) );
+		$tags_list = get_the_tag_list();
 		if ( $tags_list ) {
 			printf( '<div class="tags-links">' . esc_html__( '%1$s', 'the-authority' ) . '</div>', $tags_list ); // WPCS: XSS OK.
 		}

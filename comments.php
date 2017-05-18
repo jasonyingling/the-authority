@@ -25,14 +25,27 @@ if ( post_password_required() ) {
 	<?php // You can start editing here -- including this comment! ?>
 
 	<?php if ( have_comments() ) : ?>
-		<h3 class="comments-intro">Share your thoughts</h3>
+		<h3 class="comments-intro"><?php esc_html_e( 'Share your thoughts', 'the-authority'); ?></h3>
 		<h2 class="comments-title">
 			<?php
-				printf( // WPCS: XSS OK.
-					esc_html( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'the-authority' ) ),
-					number_format_i18n( get_comments_number() ),
-					'<span>' . get_the_title() . '</span>'
-				);
+				$comments_number = get_comments_number();
+				if ( '1' === $comments_number ) {
+					/* translators: %s: post title */
+					printf( _x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'the-authority' ), get_the_title() );
+				} else {
+					printf(
+						/* translators: 1: number of comments, 2: post title */
+						_nx(
+							'%1$s Reply to &ldquo;%2$s&rdquo;',
+							'%1$s Replies to &ldquo;%2$s&rdquo;',
+							$comments_number,
+							'comments title',
+							'the-authority'
+						),
+						number_format_i18n( $comments_number ),
+						get_the_title()
+					);
+				}
 			?>
 		</h2>
 
@@ -69,15 +82,17 @@ if ( post_password_required() ) {
 		</nav><!-- #comment-nav-below -->
 		<?php endif; // Check for comment navigation. ?>
 
-	<?php endif; // Check for have_comments(). ?>
+	<?php endif; // Check for have_comments().
 
-	<?php
-		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
-	?>
+
+	// If comments are closed and there are comments, let's leave a little note, shall we?
+	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
+
 		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'the-authority' ); ?></p>
-	<?php endif; ?>
+	<?php
+	endif;
 
-	<?php comment_form(); ?>
+	comment_form();
+	?>
 
 </div><!-- #comments -->

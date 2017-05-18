@@ -15,7 +15,6 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
 </head>
@@ -34,12 +33,12 @@
 			<div class="secondary-aside">
 				<div class="site-search">
 					<button class="site-search-button js-toggle-site-search">
-						<i class="fa fa-search"></i><span>Search</span>
+						<i class="fa fa-search"></i><span><?php esc_html_e( 'Search', 'the-authority'); ?></span>
 					</button>
 				</div><!-- .site-search -->
 				<?php if ( class_exists( 'Easy_Digital_Downloads' ) ) : ?>
 				<div class="aty-edd-cart">
-				    <a class="<?php if ( edd_get_cart_quantity() ) { echo 'cart-has-items'; } ?>" href="<?php echo edd_get_checkout_uri(); ?>">
+				    <a class="<?php if ( edd_get_cart_quantity() ) { echo 'cart-has-items'; } ?>" href="<?php esc_url( edd_get_checkout_uri() ); ?>">
 				        <i class="fa fa-shopping-cart"></i>
 				        <?php if ( edd_get_cart_quantity() ) : ?>
 				            <span class="edd-cart-quantity"><?php echo edd_get_cart_quantity(); ?></span>
@@ -52,12 +51,7 @@
 
 		<div class="site-search-dropdown js-site-search-dropdown">
 			<div class="container">
-				<form role="search" method="get" id="header-searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<input type="search" name="s" placeholder="Search..." />
-					<button type="submit" form="header-searchform" value="Submit">
-						<i class="fa fa-search"></i><span>Search</span>
-					</button>
-				</form>
+				<?php get_search_form(); ?>
 			</div><!-- .container -->
 		</div><!-- .site-search-dropdown -->
 
@@ -93,3 +87,7 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+
+		<?php if ( get_header_image_tag() ) : ?>
+			<div class="container aty-custom-header"><?php the_header_image_tag(); ?></div>
+		<?php endif; ?>

@@ -1,0 +1,318 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: The Authority\n"
+"POT-Creation-Date: 2017-05-11 22:56-0500\n"
+"PO-Revision-Date: 2017-05-11 21:54-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: sass\n"
+"X-Poedit-SearchPathExcluded-2: fonts\n"
+"X-Poedit-SearchPathExcluded-3: _codekit-cache\n"
+
+#: 404.php:21
+msgid "404"
+msgstr ""
+
+#: 404.php:22
+msgid "Oops! That page can&rsquo;t be found"
+msgstr ""
+
+#: 404.php:26
+msgid "Try a search to find what you're looking for."
+msgstr ""
+
+#: comments.php:28
+msgid "Share your thoughts"
+msgstr ""
+
+#. translators: %s: post title
+#: comments.php:34
+#, php-format
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:39
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:54 comments.php:75
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:57 comments.php:78
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:58 comments.php:79
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:91
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:49
+msgid "Y"
+msgstr ""
+
+#: functions.php:47
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:48
+msgid "Secondary Menu"
+msgstr ""
+
+#: functions.php:49
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:104
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:114
+msgid "After First Post"
+msgstr ""
+
+#: functions.php:124
+msgid "Before Content"
+msgstr ""
+
+#: functions.php:134
+msgid "After Content"
+msgstr ""
+
+#: functions.php:144
+msgid "Footer Left"
+msgstr ""
+
+#: functions.php:154
+msgid "Footer Middle"
+msgstr ""
+
+#: functions.php:164
+msgid "Footer Right"
+msgstr ""
+
+#: header.php:24
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:36
+msgid "Search"
+msgstr ""
+
+#: inc/customizer.php:26
+msgid "Theme Colors"
+msgstr ""
+
+#: inc/customizer.php:27
+msgid "Controls the colors for the theme"
+msgstr ""
+
+#: inc/customizer.php:32
+msgid "Site Colors"
+msgstr ""
+
+#: inc/customizer.php:38
+msgid "Copy, Links, & Buttons"
+msgstr ""
+
+#: inc/customizer.php:44
+msgid "Header Colors"
+msgstr ""
+
+#: inc/customizer.php:50
+msgid "Footer Colors"
+msgstr ""
+
+#: inc/customizer.php:155
+msgid "Header Background"
+msgstr ""
+
+#: inc/customizer.php:166
+msgid "Header Accent"
+msgstr ""
+
+#: inc/customizer.php:177
+msgid "Secondary Header Background"
+msgstr ""
+
+#: inc/customizer.php:188
+msgid "Secondary Header Text"
+msgstr ""
+
+#: inc/customizer.php:199
+msgid "Secondary Header Hover"
+msgstr ""
+
+#: inc/customizer.php:210
+msgid "Submenu Background"
+msgstr ""
+
+#: inc/customizer.php:221
+msgid "Submenu Text"
+msgstr ""
+
+#: inc/customizer.php:235
+msgid "Primary Links & Buttons"
+msgstr ""
+
+#: inc/customizer.php:246
+msgid "Hover"
+msgstr ""
+
+#: inc/customizer.php:257
+msgid "Secondary Links"
+msgstr ""
+
+#: inc/customizer.php:268 inc/customizer.php:323
+msgid "Copy"
+msgstr ""
+
+#: inc/customizer.php:279
+msgid "Footer Background"
+msgstr ""
+
+#: inc/customizer.php:290
+msgid "Footer Links & Buttons"
+msgstr ""
+
+#: inc/customizer.php:301
+msgid "Footer Hover"
+msgstr ""
+
+#: inc/customizer.php:312
+msgid "Secondary Links & Buttons"
+msgstr ""
+
+#: inc/template-tags.php:39
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:39
+msgid "1"
+msgstr ""
+
+#: inc/template-tags.php:39
+msgid "%"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:54
+msgid " "
+msgstr ""
+
+#: inc/template-tags.php:56 inc/template-tags.php:62
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: inc/template-tags.php:66
+msgid "Edit"
+msgstr ""
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:16
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:18
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:19
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: single.php:21
+msgid "<strong>Previous</strong><br> %title"
+msgstr ""
+
+#: single.php:22
+msgid "<strong>Next</strong><br> %title"
+msgstr ""
+
+#: single.php:23
+msgid "Continue Reading"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:27 template-parts/content-single.php:46
+#: template-parts/content.php:34
+msgid "Pages:"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "The Authority"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://jasonyingling.me/the-authority"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The Authority is a lightning fast, responsive WordPress theme designed to "
+"make your content the center of attention. Activate the theme and get "
+"started sharing your authority with the world. Looking to release an ebook? "
+"No problem. The Authority supports Easy Digital Downloads so you can get "
+"started selling too."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Jason Yingling"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://jasonyingling.me"
+msgstr ""

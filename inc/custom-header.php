@@ -19,12 +19,10 @@ function the_authority_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'the_authority_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
+		'width'                  => 1440,
 		'height'                 => 250,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'the_authority_header_style',
-		'admin-head-callback'    => 'the_authority_admin_header_style',
-		'admin-preview-callback' => 'the_authority_admin_header_image',
 	) ) );
 }
 add_action( 'after_setup_theme', 'the_authority_custom_header_setup' );
@@ -56,9 +54,11 @@ function the_authority_header_style() {
 	$footer_secondary = get_theme_mod( 'footer_secondary_shade');
 	$footer_copy = get_theme_mod( 'footer_copy_color');
 
-	// If no custom options for text are set, let's bail
-	// get_header_textcolor() options: HEADER_TEXTCOLOR is default, hide text (returns 'blank') or any hex value.
-	if ( HEADER_TEXTCOLOR == $header_text_color ) {
+	/*
+	 * If no custom options for text are set, let's bail.
+	 * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).
+	 */
+	if ( get_theme_support( 'custom-header', 'default-text-color' ) === $header_text_color ) {
 		return;
 	}
 
@@ -117,7 +117,7 @@ function the_authority_header_style() {
 	<?php
 		if ( $copy_color ) :
 	?>
-		body, button, input, select, textarea, .entry-title a, .page-title a, .entry-title a:visited, .page-title a:visited, .widget-title {
+		body, input, select, textarea, .entry-title a, .page-title a, .entry-title a:visited, .page-title a:visited, .widget-title {
 			color: <?php echo $copy_color; ?>;
 		}
 	<?php
@@ -126,7 +126,7 @@ function the_authority_header_style() {
 
 	<?php
 		// Has the text been hidden?
-		if ( 'blank' == $header_text_color ) :
+		if ( ! display_header_text() ) :
 	?>
 		.site-title,
 		.site-description {
