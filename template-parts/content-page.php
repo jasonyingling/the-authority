@@ -21,13 +21,25 @@
 	<?php endif; ?>
 
 	<div class="entry-content">
+		<?php if ( is_active_sidebar( 'at-before-content' ) ) : ?>
+			<div class="entry-before-content">
+				<?php dynamic_sidebar( 'at-before-content' ); ?>
+			</div>
+		<?php endif; ?>
+
 		<?php the_content(); ?>
+		
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'the-authority' ),
 				'after'  => '</div>',
 			) );
 		?>
+		<?php if ( is_active_sidebar( 'at-after-content' ) ) : ?>
+			<div class="entry-after-content">
+				<?php dynamic_sidebar( 'at-after-content' ); ?>
+			</div>
+		<?php endif; ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

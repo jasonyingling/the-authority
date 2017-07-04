@@ -35,12 +35,15 @@
 				<?php dynamic_sidebar( 'at-before-content' ); ?>
 			</div>
 		<?php endif; ?>
+
 		<?php the_content(); ?>
+
 		<?php if ( is_active_sidebar( 'at-after-content' ) ) : ?>
 			<div class="entry-after-content">
 				<?php dynamic_sidebar( 'at-after-content' ); ?>
 			</div>
 		<?php endif; ?>
+
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'the-authority' ),
