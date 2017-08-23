@@ -4,8 +4,8 @@ Contributors: yingling017
 Tags: translation-ready, custom-background, theme-options, custom-menu, threaded-comments, editor-style, featured-images, one-column, two-column, right-sidebar, footer-widgets, custom-logo
 
 Requires at least: 4.0
-Tested up to: 4.7.4
-Stable tag: 1.0.0
+Tested up to: 4.8.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,12 @@ And many more
 
 == Changelog ==
 
+= 1.0.2 - August 23, 2017 =
+* Removing Freemius. Updating styles for q and table elements. Mobile menu now closes automatically above 960px. Hamburger button controlled with Header Accent customizer setting.
+
+= 1.0.1 =
+* Minor updates
+
 = 1.0 - May 11, 2017 =
 * Initial release
 
@@ -48,6 +54,5 @@ And many more
 * jquery.mmenu.min.js © Fred Heusschen, MIT
 * Font Awesome Font License, SIL OFL 1.1
 * Font Awesome Code License, MIT
-* Freemius © Freemius, Inc., GPL
 * Bourbon © 2011-2015 thoughtbot, inc.
 * Bourbon.Neat © 2011-2015 thoughtbot, inc.

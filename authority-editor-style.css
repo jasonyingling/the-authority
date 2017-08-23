@@ -107,7 +107,6 @@ dfn, cite, em, i {
 
 blockquote {
   margin: 0 1.5em;
-  font-style: italic;
   padding-left: 1em;
   border-left: 3px solid #f46060;
 }

@@ -30,4 +30,12 @@ jQuery(document).ready(function($){
 		},
 	    extensions: ["pageshadow", "effect-slide-menu", "effect-slide-listitems", "theme-dark"]
 	});
+
+    var mmenuAPI = $('#mobile-navigation').data('mmenu');
+
+    $(window).resize( function() {
+        if ( $('#mobile-navigation').hasClass('mm-opened') ) {
+            mmenuAPI.close();
+        }
+    } );
 });

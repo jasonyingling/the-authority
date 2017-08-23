@@ -176,13 +176,15 @@ add_action( 'widgets_init', 'the_authority_widgets_init' );
  * Enqueue scripts and styles.
  */
 function the_authority_scripts() {
-	wp_enqueue_style( 'the-authority-style', get_stylesheet_uri(), array(), '20170417' );
+	wp_enqueue_style( 'the-authority-style', get_stylesheet_uri(), array(), '20170823' );
+
+	wp_enqueue_style( 'the-authority-print', get_template_directory_uri() . '/print.css', array(), '20170823', 'print' );
 
 	wp_enqueue_script( 'the-authority-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	wp_enqueue_script( 'jquery-mmenu', get_template_directory_uri() . '/js/vendor/jquery.mmenu.min.js', array('jquery'), '20161220', true );
 
-	wp_enqueue_script( 'the-authority-scripts', get_template_directory_uri() . '/js/min/main-min.js', array('jquery'), '20160320', true );
+	wp_enqueue_script( 'the-authority-scripts', get_template_directory_uri() . '/js/min/main-min.js', array('jquery'), '20170823', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -262,30 +264,3 @@ function the_authority_first_post_image($html) {
     return $html;
 }
 add_filter('post_thumbnail_html', 'the_authority_first_post_image', 100);
-
-// Create a helper function for easy SDK access.
-function the_authority_fs() {
-    global $the_authority_fs;
-
-    if ( ! isset( $the_authority_fs ) ) {
-        // Include Freemius SDK.
-        require_once dirname(__FILE__) . '/freemius/start.php';
-
-        $the_authority_fs = fs_dynamic_init( array(
-            'id'                  => '1008',
-            'slug'                => 'the-authority',
-            'type'                => 'theme',
-            'public_key'          => 'pk_ba7b7f643e84934afd1ed1e2f60a1',
-            'is_premium'          => false,
-            'has_addons'          => false,
-            'has_paid_plans'      => false,
-        ) );
-    }
-
-    return $the_authority_fs;
-}
-
-// Init Freemius.
-the_authority_fs();
-// Signal that SDK was initiated.
-do_action( 'the_authority_fs_loaded' );

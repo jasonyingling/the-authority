@@ -74,8 +74,7 @@ function the_authority_header_style() {
 		blockquote, button, input[type="button"], input[type="reset"], input[type="submit"] {
 			border-color: <?php echo $primary_link; ?>;
 		}
-		.main-navigation .callout-nav, .widget_calendar thead, button, input[type="button"], input[type="reset"], input[type="submit"], .widget_archive ul a:hover, .widget_categories ul a:hover, .site-search-dropdown button,
-		.hamburger-button span, .hamburger-button:before, .hamburger-button:after {
+		.main-navigation .callout-nav, .widget_calendar thead, button, input[type="button"], input[type="reset"], input[type="submit"], .widget_archive ul a:hover, .widget_categories ul a:hover, .site-search-dropdown button {
 			background: <?php echo $primary_link; ?>;
 		}
 		div.cat-links a:hover, div.cat-links a:focus {
@@ -158,6 +157,9 @@ function the_authority_header_style() {
 	?>
 		.main-navigation ul ul:before, .main-navigation ul li a:before {
 			background-color: <?php echo $header_accents; ?>;
+		}
+		.hamburger-button span, .hamburger-button:before, .hamburger-button:after {
+			background: <?php echo $header_accents; ?>;
 		}
 	<?php
 		endif;
