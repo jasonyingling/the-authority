@@ -54,15 +54,6 @@ function the_authority_header_style() {
 	$footer_secondary = get_theme_mod( 'footer_secondary_shade');
 	$footer_copy = get_theme_mod( 'footer_copy_color');
 
-	/*
-	 * If no custom options for text are set, let's bail.
-	 * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).
-	 */
-	if ( get_theme_support( 'custom-header', 'default-text-color' ) === $header_text_color ) {
-		return;
-	}
-
-	// If we get this far, we have custom styles. Let's do this.
 	?>
 	<style type="text/css">
 	<?php
