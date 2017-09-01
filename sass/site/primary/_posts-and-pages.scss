@@ -225,6 +225,15 @@ div.cat-links {
 	}
 }
 
+.tax-string {
+	display: block;
+	@include font-size(0.75);
+	color: $color__secondaryShade;
+	opacity: 0.75;
+	font-style: italic;
+	margin-bottom: 0.25em;
+}
+
 .comments-link {
 	a {
 		&:before {

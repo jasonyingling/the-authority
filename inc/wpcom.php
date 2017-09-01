@@ -4,7 +4,7 @@
  *
  * This file is centrally included from `wp-content/mu-plugins/wpcom-theme-compat.php`.
  *
- * @package gibby
+ * @package The Authority
  */
 
 /**
@@ -12,7 +12,7 @@
  *
  * @global array $themecolors
  */
-function gibby_wpcom_setup() {
+function the_authority_wpcom_setup() {
 	global $themecolors;
 
 	// Set theme colors for third party services.
@@ -26,4 +26,4 @@ function gibby_wpcom_setup() {
 		);
 	}
 }
-add_action( 'after_setup_theme', 'gibby_wpcom_setup' );
+add_action( 'after_setup_theme', 'the_authority_wpcom_setup' );

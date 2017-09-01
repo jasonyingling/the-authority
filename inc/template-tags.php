@@ -53,13 +53,13 @@ function the_authority_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ' ', 'the-authority' ) );
 		if ( $categories_list && the_authority_categorized_blog() ) {
-			printf( '<div class="cat-links">' . esc_html__( '%1$s', 'the-authority' ) . '</div>', $categories_list ); // WPCS: XSS OK.
+			printf( '<div class="cat-links">' . esc_html__( '%1$sPosted in%2$s %3$s', 'the-authority' ) . '</div>', '<span class="tax-string">', '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list();
 		if ( $tags_list ) {
-			printf( '<div class="tags-links">' . esc_html__( '%1$s', 'the-authority' ) . '</div>', $tags_list ); // WPCS: XSS OK.
+			printf( '<div class="tags-links">' . esc_html__( '%1$sTagged%2$s %3$s', 'the-authority' ) . '</div>', '<span class="tax-string">', '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 

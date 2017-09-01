@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, threaded
 
 Requires at least: 4.0
 Tested up to: 4.8.1
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,9 @@ Easy Footnotes
 And many more
 
 == Changelog ==
+
+= 1.0.4 - September 1, 2017 =
+* Adding translatable text for read more and category / tag lists. Escaping data in title. Adding text domain to wpcom.php. 
 
 = 1.0.3 - August 23, 2017 =
 * Fixing issue where customizer styles would not print out if header text color option wasn't changed

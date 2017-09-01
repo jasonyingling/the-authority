@@ -11,13 +11,19 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( has_post_thumbnail() ) : ?>
 		<figure>
-			<a href="<?php esc_url( get_permalink() ); ?>">
+			<a href="<?php echo esc_url( get_permalink() ); ?>">
 				<?php the_post_thumbnail('full'); ?>
 			</a>
 		</figure>
 	<?php endif; ?>
 	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<?php
+			if ( is_singular() ) :
+				the_title( '<h1 class="entry-title">', '</h1>' );
+			else :
+				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			endif;
+		?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">

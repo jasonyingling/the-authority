@@ -230,7 +230,7 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 function the_authority_new_excerpt_more($more) {
 	global $post;
-	return '...<a class="excerpt-more-link" href="'. esc_url( get_permalink($post->ID) ) . '">Read More</a>';
+	return '...<a class="excerpt-more-link" href="'. esc_url( get_permalink($post->ID) ) . '">' . __('Read More', 'the-authority') . '</a>';
 }
 add_filter('excerpt_more', 'the_authority_new_excerpt_more');
 
@@ -238,7 +238,7 @@ add_filter('excerpt_more', 'the_authority_new_excerpt_more');
  * Replaces the content "Read More" text with a link
  */
 function the_authority_modify_read_more_link() {
-    return '<a class="more-link" href="' . esc_url( get_permalink() ) . '">Read More</a>';
+    return '<a class="more-link" href="' . esc_url( get_permalink() ) . '">' . __('Read More', 'the-authority') . '</a>';
 }
 add_filter( 'the_content_more_link', 'the_authority_modify_read_more_link' );
 
