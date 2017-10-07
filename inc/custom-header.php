@@ -60,16 +60,16 @@ function the_authority_header_style() {
 		if ( $primary_link ) :
 	?>
 		a, a:visited, .entry-title a:hover, .entry-title a:focus, .page-title a:hover, .page-title a:focus, .entry-meta span a:hover, .entry-meta span a:focus, .tags-links a:hover, .tags-links a:focus, #site-title a:hover {
-			color: <?php echo $primary_link; ?>;
+			color: <?php echo esc_attr( $primary_link ); ?>;
 		}
 		blockquote, button, input[type="button"], input[type="reset"], input[type="submit"] {
-			border-color: <?php echo $primary_link; ?>;
+			border-color: <?php echo esc_attr( $primary_link ); ?>;
 		}
 		.main-navigation .callout-nav, .widget_calendar thead, button, input[type="button"], input[type="reset"], input[type="submit"], .widget_archive ul a:hover, .widget_categories ul a:hover, .site-search-dropdown button {
-			background: <?php echo $primary_link; ?>;
+			background: <?php echo esc_attr( $primary_link ); ?>;
 		}
 		div.cat-links a:hover, div.cat-links a:focus {
-			background-color: <?php echo $primary_link; ?>;
+			background-color: <?php echo esc_attr( $primary_link ); ?>;
 		}
 	<?php
 		endif;
@@ -79,10 +79,10 @@ function the_authority_header_style() {
 		if ( $primary_hover ) :
 	?>
 		a:hover, a:focus {
-			color: <?php echo $primary_hover; ?>;
+			color: <?php echo esc_attr( $primary_hover ); ?>;
 		}
 		.main-navigation .callout-nav:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .site-search-dropdown button:hover {
-			background: <?php echo $primary_hover; ?>;
+			background: <?php echo esc_attr( $primary_hover ); ?>;
 		}
 	<?php
 		endif;
@@ -92,13 +92,13 @@ function the_authority_header_style() {
 		if ( $secondary_shade ) :
 	?>
 		.entry-meta>span, .entry-meta span a, .tags-links a {
-			color: <?php echo $secondary_shade; ?>;
+			color: <?php echo esc_attr( $secondary_shade ); ?>;
 		}
 		.widget_archive ul a, .widget_categories ul a {
-			background: <?php echo $secondary_shade; ?>;
+			background: <?php echo esc_attr( $secondary_shade ); ?>;
 		}
 		div.cat-links a {
-			background-color: <?php echo $secondary_shade; ?>;
+			background-color: <?php echo esc_attr( $secondary_shade ); ?>;
 		}
 	<?php
 		endif;
@@ -108,7 +108,7 @@ function the_authority_header_style() {
 		if ( $copy_color ) :
 	?>
 		body, input, select, textarea, .entry-title a, .page-title a, .entry-title a:visited, .page-title a:visited, .widget-title {
-			color: <?php echo $copy_color; ?>;
+			color: <?php echo esc_attr( $copy_color ); ?>;
 		}
 	<?php
 		endif;
@@ -137,7 +137,7 @@ function the_authority_header_style() {
 		if ( $header_background ) :
 	?>
 		.site-header, .site-search-dropdown {
-			background-color: <?php echo $header_background; ?>;
+			background-color: <?php echo esc_attr( $header_background ); ?>;
 		}
 	<?php
 		endif;
@@ -147,10 +147,10 @@ function the_authority_header_style() {
 		if ( $header_accents ) :
 	?>
 		.main-navigation ul ul:before, .main-navigation ul li a:before {
-			background-color: <?php echo $header_accents; ?>;
+			background-color: <?php echo esc_attr( $header_accents ); ?>;
 		}
 		.hamburger-button span, .hamburger-button:before, .hamburger-button:after {
-			background: <?php echo $header_accents; ?>;
+			background: <?php echo esc_attr( $header_accents ); ?>;
 		}
 	<?php
 		endif;
@@ -160,7 +160,7 @@ function the_authority_header_style() {
 		if ( $secondary_header ) :
 	?>
 		.secondary-header, .secondary-navigation #secondary-menu>li>.sub-menu {
-			background-color: <?php echo $secondary_header; ?>;
+			background-color: <?php echo esc_attr( $secondary_header ); ?>;
 		}
 	<?php
 		endif;
@@ -170,7 +170,7 @@ function the_authority_header_style() {
 		if ( $secondary_header_text ) :
 	?>
 		.secondary-navigation ul a, .secondary-navigation ul a:visited, .site-search .site-search-button, .aty-edd-cart a, .aty-edd-cart a:visited {
-			color: <?php echo $secondary_header_text; ?>;
+			color: <?php echo esc_attr( $secondary_header_text ); ?>;
 		}
 	<?php
 		endif;
@@ -180,7 +180,7 @@ function the_authority_header_style() {
 		if ( $secondary_header_text_hover ) :
 	?>
 		.secondary-navigation ul a:hover, .secondary-navigation ul a:focus, .site-search .site-search-button:hover, .site-search .site-search-button:focus, .aty-edd-cart a:hover, .aty-edd-cart a:focus {
-			color: <?php echo $secondary_header_text_hover; ?>;
+			color: <?php echo esc_attr( $secondary_header_text_hover ); ?>;
 		}
 	<?php
 		endif;
@@ -190,7 +190,7 @@ function the_authority_header_style() {
 		if ( $submenu_background ) :
 	?>
 		.main-navigation ul ul {
-			background-color: <?php echo $submenu_background; ?>;
+			background-color: <?php echo esc_attr( $submenu_background ); ?>;
 		}
 	<?php
 		endif;
@@ -200,7 +200,7 @@ function the_authority_header_style() {
 		if ( $submenu_text ) :
 	?>
 		.main-navigation ul ul li a {
-			color: <?php echo $submenu_text; ?>;
+			color: <?php echo esc_attr( $submenu_text ); ?>;
 		}
 	<?php
 		endif;
@@ -210,7 +210,7 @@ function the_authority_header_style() {
 		if ( $footer_background ) :
 	?>
 		.site-footer {
-			background-color: <?php echo $footer_background; ?>;
+			background-color: <?php echo esc_attr( $footer_background ); ?>;
 		}
 	<?php
 		endif;
@@ -223,15 +223,15 @@ function the_authority_header_style() {
 		.footer-navigation ul li a:focus, .site-footer .widget_pages ul li a:focus, .site-footer .widget_nav_menu ul li a:focus,
 		.footer-navigation ul li ul li a:hover, .site-footer .widget_pages ul li ul li a:hover, .site-footer .widget_nav_menu ul li ul li a:hover,
 		.footer-navigation ul li ul li a:focus, .site-footer .widget_pages ul li ul li a:focus, .site-footer .widget_nav_menu ul li ul li a:focus {
-			color: <?php echo $footer_primary; ?>;
+			color: <?php echo esc_attr( $footer_primary ); ?>;
 		}
 		.site-footer button, .site-footer input[type="button"], .site-footer input[type="reset"], .site-footer input[type="submit"] {
-			background-color: <?php echo $footer_primary; ?>;
+			background-color: <?php echo esc_attr( $footer_primary ); ?>;
 		}
 		.site-footer .widget_calendar thead,
 		.site-footer .widget_archive ul a:hover, .site-footer .widget_categories ul a:hover,
 		.site-footer .widget_archive ul a:focus, .site-footer .widget_categories ul a:focus {
-			background: <?php echo $footer_primary; ?>;
+			background: <?php echo esc_attr( $footer_primary ); ?>;
 		}
 	<?php
 		endif;
@@ -241,11 +241,11 @@ function the_authority_header_style() {
 		if ( $footer_hover ) :
 	?>
 		.site-footer a:hover, .site-footer a:focus {
-			color: <?php echo $footer_hover; ?>;
+			color: <?php echo esc_attr( $footer_hover ); ?>;
 		}
 		.site-footer button:hover, .site-footer input[type="button"]:hover, .site-footer input[type="reset"]:hover, .site-footer input[type="submit"]:hover,
 		.site-footer button:focus, .site-footer input[type="button"]:focus, .site-footer input[type="reset"]:focus, .site-footer input[type="submit"]:focus {
-			background-color: <?php echo $footer_hover; ?>;
+			background-color: <?php echo esc_attr( $footer_hover ); ?>;
 		}
 	<?php
 		endif;
@@ -257,7 +257,7 @@ function the_authority_header_style() {
 		.site-footer, .site-footer .site-info a, .footer-widgets .widget-title,
 		.footer-navigation ul li a, .site-footer .widget_pages ul li a, .site-footer .widget_nav_menu ul li a,
 		.footer-widgets .widget_calendar caption {
-			color: <?php echo $footer_copy; ?>;
+			color: <?php echo esc_attr( $footer_copy ); ?>;
 		}
 	<?php
 		endif;
@@ -267,7 +267,7 @@ function the_authority_header_style() {
 		if ( $footer_secondary ) :
 	?>
 		.site-footer .widget_archive ul a, .site-footer .widget_categories ul a {
-			background-color: <?php echo $footer_secondary; ?>
+			background-color: <?php echo esc_attr( $footer_secondary ); ?>
 		}
 	<?php
 		endif;
@@ -277,52 +277,3 @@ function the_authority_header_style() {
 	<?php
 }
 endif; // the_authority_header_style
-
-if ( ! function_exists( 'the_authority_admin_header_style' ) ) :
-/**
- * Styles the header image displayed on the Appearance > Header admin panel.
- *
- * @see the_authority_custom_header_setup().
- */
-function the_authority_admin_header_style() {
-?>
-	<style type="text/css">
-		.appearance_page_custom-header #headimg {
-			border: none;
-		}
-		#headimg h1,
-		#desc {
-		}
-		#headimg h1 {
-		}
-		#headimg h1 a {
-		}
-		#desc {
-		}
-		#headimg img {
-		}
-	</style>
-<?php
-}
-endif; // the_authority_admin_header_style
-
-if ( ! function_exists( 'the_authority_admin_header_image' ) ) :
-/**
- * Custom header image markup displayed on the Appearance > Header admin panel.
- *
- * @see the_authority_custom_header_setup().
- */
-function the_authority_admin_header_image() {
-?>
-	<div id="headimg">
-		<h1 class="displaying-header-text">
-			<a id="name" style="<?php echo esc_attr( 'color: #' . get_header_textcolor() ); ?>" onclick="return false;" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-		</h1>
-		<div class="displaying-header-text" id="desc" style="<?php echo esc_attr( 'color: #' . get_header_textcolor() ); ?>"><?php bloginfo( 'description' ); ?></div>
-		<?php if ( get_header_image() ) : ?>
-		<img src="<?php header_image(); ?>" alt="">
-		<?php endif; ?>
-	</div>
-<?php
-}
-endif; // the_authority_admin_header_image

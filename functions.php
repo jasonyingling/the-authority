@@ -77,7 +77,6 @@ function the_authority_setup() {
 		'default-image' => '',
 	) ) );
 
-	add_image_size( 'aty-featured', 855, 0 );
 }
 endif; // the_authority_setup
 add_action( 'after_setup_theme', 'the_authority_setup' );
@@ -229,15 +228,22 @@ require get_template_directory() . '/inc/jetpack.php';
  * Replaces the excerpt "Read More" text with a link
  */
 function the_authority_new_excerpt_more($more) {
-	global $post;
-	return '...<a class="excerpt-more-link" href="'. esc_url( get_permalink($post->ID) ) . '">' . __('Read More', 'the-authority') . '</a>';
+	if ( is_admin() ) {
+		return $more;
+	}
+
+	return '...<a class="excerpt-more-link" href="'. esc_url( get_permalink( get_the_ID() ) ) . '">' . __('Read More', 'the-authority') . '</a>';
 }
 add_filter('excerpt_more', 'the_authority_new_excerpt_more');
 
 /**
  * Replaces the content "Read More" text with a link
  */
-function the_authority_modify_read_more_link() {
+function the_authority_modify_read_more_link( $more ) {
+	if ( is_admin() ) {
+		return $more;
+	}
+	
     return '<a class="more-link" href="' . esc_url( get_permalink() ) . '">' . __('Read More', 'the-authority') . '</a>';
 }
 add_filter( 'the_content_more_link', 'the_authority_modify_read_more_link' );
