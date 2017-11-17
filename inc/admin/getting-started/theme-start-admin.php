@@ -6,20 +6,6 @@
  */
 
  /**
-  * Redirect to Getting Started page on theme activation
-  */
- function the_authority_redirect_on_activation() {
- 	global $pagenow;
-
- 	if ( is_admin() && 'themes.php' == $pagenow && isset( $_GET['activated'] ) ) {
-
- 		wp_redirect( admin_url( "themes.php?page=the-authority-start" ) );
-
- 	}
- }
- //add_action( 'admin_init', 'the_authority_redirect_on_activation' );
-
- /**
   * Add an admin notice on theme activate
   */
  function the_authority_sample_theme_admin_notices() {

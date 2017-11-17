@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: The Authority\n"
-"POT-Creation-Date: 2017-11-17 16:58-0600\n"
-"PO-Revision-Date: 2017-11-17 16:58-0600\n"
+"POT-Creation-Date: 2017-11-17 17:48-0600\n"
+"PO-Revision-Date: 2017-11-17 17:48-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -31,6 +31,174 @@ msgstr ""
 
 #: 404.php:26
 msgid "Try a search to find what you're looking for."
+msgstr ""
+
+#: build/inc/admin/getting-started/theme-start-admin.php:17
+#: inc/admin/getting-started/theme-start-admin.php:17
+#, php-format
+msgid ""
+"Thanks for using %s. To get the most out of your theme check the <a href=\"%s"
+"\">Getting Started</a> page."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+#: build/inc/admin/getting-started/theme-start-admin.php:17
+#: inc/admin/getting-started/theme-start-admin.php:17
+#: inc/admin/getting-started/theme-start.php:21
+msgid "The Authority"
+msgstr ""
+
+#. Author of the plugin/theme
+#: build/inc/admin/getting-started/theme-start-admin.php:66
+#: inc/admin/getting-started/theme-start-admin.php:66
+#: inc/admin/getting-started/theme-start.php:24
+msgid "Jason Yingling"
+msgstr ""
+
+#: build/inc/admin/getting-started/theme-start-admin.php:126
+#: inc/admin/getting-started/theme-start-admin.php:126
+#, php-format
+msgid "Getting started with %1$s"
+msgstr ""
+
+#: build/inc/admin/getting-started/theme-start-admin.php:128
+#: inc/admin/getting-started/theme-start-admin.php:128
+#, php-format
+msgid "Everything you need to get the most out of %s can be found here."
+msgstr ""
+
+#: build/inc/admin/getting-started/theme-start-admin.php:134
+#: inc/admin/getting-started/theme-start-admin.php:134
+msgid "Help File"
+msgstr ""
+
+#: build/inc/admin/getting-started/theme-start-admin.php:158
+#: inc/admin/getting-started/theme-start-admin.php:158
+msgid ""
+"This help file feed seems to be temporarily down. You can always view the "
+"help file on Array in the meantime."
+msgstr ""
+
+#: build/inc/admin/getting-started/theme-start-admin.php:158
+#: inc/admin/getting-started/theme-start-admin.php:158
+msgid "Help File &rarr;"
+msgstr ""
+
+#: build/inc/admin/getting-started/theme-start-admin.php:169
+#: inc/admin/getting-started/theme-start-admin.php:169
+msgid "Introducing Aurora"
+msgstr ""
+
+#: build/inc/admin/getting-started/theme-start-admin.php:170
+#: inc/admin/getting-started/theme-start-admin.php:170
+msgid ""
+"A bold and beautiful WordPress theme for businesses and creators to start "
+"selling physical and digital goods via WooCommerce."
+msgstr ""
+
+#: build/inc/admin/getting-started/theme-start-admin.php:171
+#: inc/admin/getting-started/theme-start-admin.php:171
+msgid "Aurora WordPress Theme"
+msgstr ""
+
+#: build/inc/admin/getting-started/theme-start-admin.php:172
+#: inc/admin/getting-started/theme-start-admin.php:172
+msgid "Get it now"
+msgstr ""
+
+#: build/inc/customizer.php:26 inc/customizer.php:26
+msgid "Theme Colors"
+msgstr ""
+
+#: build/inc/customizer.php:27 inc/customizer.php:27
+msgid "Controls the colors for the theme"
+msgstr ""
+
+#: build/inc/customizer.php:32 inc/customizer.php:32
+msgid "Site Colors"
+msgstr ""
+
+#: build/inc/customizer.php:38 inc/customizer.php:38
+msgid "Copy, Links, & Buttons"
+msgstr ""
+
+#: build/inc/customizer.php:44 inc/customizer.php:44
+msgid "Header Colors"
+msgstr ""
+
+#: build/inc/customizer.php:50 inc/customizer.php:50
+msgid "Footer Colors"
+msgstr ""
+
+#: build/inc/customizer.php:161 inc/customizer.php:161
+msgid "Mobile Navigation Control"
+msgstr ""
+
+#: build/inc/customizer.php:162 inc/customizer.php:162
+msgid ""
+"Set the width at which point the mobile menu button shows and the main "
+"navigation disappears."
+msgstr ""
+
+#: build/inc/customizer.php:174 inc/customizer.php:174
+msgid "Header Background"
+msgstr ""
+
+#: build/inc/customizer.php:185 inc/customizer.php:185
+msgid "Header Accent"
+msgstr ""
+
+#: build/inc/customizer.php:196 inc/customizer.php:196
+msgid "Secondary Header Background"
+msgstr ""
+
+#: build/inc/customizer.php:207 inc/customizer.php:207
+msgid "Secondary Header Text"
+msgstr ""
+
+#: build/inc/customizer.php:218 inc/customizer.php:218
+msgid "Secondary Header Hover"
+msgstr ""
+
+#: build/inc/customizer.php:229 inc/customizer.php:229
+msgid "Submenu Background"
+msgstr ""
+
+#: build/inc/customizer.php:240 inc/customizer.php:240
+msgid "Submenu Text"
+msgstr ""
+
+#: build/inc/customizer.php:254 inc/customizer.php:254
+msgid "Primary Links & Buttons"
+msgstr ""
+
+#: build/inc/customizer.php:265 inc/customizer.php:265
+msgid "Hover"
+msgstr ""
+
+#: build/inc/customizer.php:276 inc/customizer.php:276
+msgid "Secondary Links"
+msgstr ""
+
+#: build/inc/customizer.php:287 build/inc/customizer.php:342
+#: inc/customizer.php:287 inc/customizer.php:342
+msgid "Copy"
+msgstr ""
+
+#: build/inc/customizer.php:298 inc/customizer.php:298
+msgid "Footer Background"
+msgstr ""
+
+#: build/inc/customizer.php:309 inc/customizer.php:309
+msgid "Footer Links & Buttons"
+msgstr ""
+
+#: build/inc/customizer.php:320 inc/customizer.php:320
+msgid "Footer Hover"
+msgstr ""
+
+#: build/inc/customizer.php:331 inc/customizer.php:331
+msgid "Secondary Links & Buttons"
 msgstr ""
 
 #: comments.php:28
@@ -124,163 +292,8 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: inc/admin/getting-started/theme-start-admin.php:31
-#, php-format
-msgid ""
-"Thanks for using %s. To get the most out of your theme check the <a href=\"%s"
-"\">Getting Started</a> page."
-msgstr ""
-
-#. Theme Name of the plugin/theme
-#: inc/admin/getting-started/theme-start-admin.php:31
-#: inc/admin/getting-started/theme-start.php:21
-msgid "The Authority"
-msgstr ""
-
-#. Author of the plugin/theme
-#: inc/admin/getting-started/theme-start-admin.php:80
-#: inc/admin/getting-started/theme-start.php:24
-msgid "Jason Yingling"
-msgstr ""
-
-#: inc/admin/getting-started/theme-start-admin.php:140
-#, php-format
-msgid "Getting started with %1$s"
-msgstr ""
-
-#: inc/admin/getting-started/theme-start-admin.php:142
-#, php-format
-msgid "Everything you need to get the most out of %s can be found here."
-msgstr ""
-
-#: inc/admin/getting-started/theme-start-admin.php:148
-msgid "Help File"
-msgstr ""
-
-#: inc/admin/getting-started/theme-start-admin.php:172
-msgid ""
-"This help file feed seems to be temporarily down. You can always view the "
-"help file on Array in the meantime."
-msgstr ""
-
-#: inc/admin/getting-started/theme-start-admin.php:172
-msgid "Help File &rarr;"
-msgstr ""
-
-#: inc/admin/getting-started/theme-start-admin.php:183
-msgid "Introducing Aurora"
-msgstr ""
-
-#: inc/admin/getting-started/theme-start-admin.php:184
-msgid ""
-"A bold and beautiful WordPress theme for businesses and creators to start "
-"selling physical and digital goods via WooCommerce."
-msgstr ""
-
-#: inc/admin/getting-started/theme-start-admin.php:185
-msgid "Aurora WordPress Theme"
-msgstr ""
-
-#: inc/admin/getting-started/theme-start-admin.php:186
-msgid "Get it now"
-msgstr ""
-
 #: inc/admin/getting-started/theme-start.php:29
 msgid "Getting Started"
-msgstr ""
-
-#: inc/customizer.php:26
-msgid "Theme Colors"
-msgstr ""
-
-#: inc/customizer.php:27
-msgid "Controls the colors for the theme"
-msgstr ""
-
-#: inc/customizer.php:32
-msgid "Site Colors"
-msgstr ""
-
-#: inc/customizer.php:38
-msgid "Copy, Links, & Buttons"
-msgstr ""
-
-#: inc/customizer.php:44
-msgid "Header Colors"
-msgstr ""
-
-#: inc/customizer.php:50
-msgid "Footer Colors"
-msgstr ""
-
-#: inc/customizer.php:161
-msgid "Mobile Navigation Control"
-msgstr ""
-
-#: inc/customizer.php:162
-msgid ""
-"Set the width at which point the mobile menu button shows and the main "
-"navigation disappears."
-msgstr ""
-
-#: inc/customizer.php:174
-msgid "Header Background"
-msgstr ""
-
-#: inc/customizer.php:185
-msgid "Header Accent"
-msgstr ""
-
-#: inc/customizer.php:196
-msgid "Secondary Header Background"
-msgstr ""
-
-#: inc/customizer.php:207
-msgid "Secondary Header Text"
-msgstr ""
-
-#: inc/customizer.php:218
-msgid "Secondary Header Hover"
-msgstr ""
-
-#: inc/customizer.php:229
-msgid "Submenu Background"
-msgstr ""
-
-#: inc/customizer.php:240
-msgid "Submenu Text"
-msgstr ""
-
-#: inc/customizer.php:254
-msgid "Primary Links & Buttons"
-msgstr ""
-
-#: inc/customizer.php:265
-msgid "Hover"
-msgstr ""
-
-#: inc/customizer.php:276
-msgid "Secondary Links"
-msgstr ""
-
-#: inc/customizer.php:287 inc/customizer.php:342
-msgid "Copy"
-msgstr ""
-
-#: inc/customizer.php:298
-msgid "Footer Background"
-msgstr ""
-
-#: inc/customizer.php:309
-msgid "Footer Links & Buttons"
-msgstr ""
-
-#: inc/customizer.php:320
-msgid "Footer Hover"
-msgstr ""
-
-#: inc/customizer.php:331
-msgid "Secondary Links & Buttons"
 msgstr ""
 
 #: inc/template-tags.php:39

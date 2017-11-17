@@ -159,7 +159,7 @@ function the_authority_customize_register( $wp_customize ) {
 		'priority'		=> 50,
 		'section'		=> 'title_tagline',
 		'label'			=> __( 'Mobile Navigation Control', 'the-authority' ),
-		'description'	=> __( 'Set the width at which point the mobile menu button shows and the main navigation disappears.', 'the-authortiy' ),
+		'description'	=> __( 'Set the width at which point the mobile menu button shows and the main navigation disappears.', 'the-authority' ),
 		'input_attrs' => array(
             'min'   => 320,
         ),
