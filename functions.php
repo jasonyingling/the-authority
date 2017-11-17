@@ -200,6 +200,16 @@ function the_authority_theme_add_editor_styles() {
 add_action( 'admin_init', 'the_authority_theme_add_editor_styles' );
 
 /**
+ * Load theme updater functions.
+ * Action is used so that child themes can easily disable.
+ */
+
+function the_authority_theme_settings() {
+	require( get_template_directory() . '/inc/admin/getting-started/theme-start.php' );
+}
+add_action( 'after_setup_theme', 'the_authority_theme_settings' );
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -243,7 +253,7 @@ function the_authority_modify_read_more_link( $more ) {
 	if ( is_admin() ) {
 		return $more;
 	}
-	
+
     return '<a class="more-link" href="' . esc_url( get_permalink() ) . '">' . __('Read More', 'the-authority') . '</a>';
 }
 add_filter( 'the_content_more_link', 'the_authority_modify_read_more_link' );

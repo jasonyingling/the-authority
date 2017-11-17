@@ -38,7 +38,7 @@
 				</div><!-- .site-search -->
 				<?php if ( class_exists( 'Easy_Digital_Downloads' ) ) : ?>
 				<div class="aty-edd-cart">
-				    <a class="<?php if ( edd_get_cart_quantity() ) { echo 'cart-has-items'; } ?>" href="<?php esc_url( edd_get_checkout_uri() ); ?>">
+				    <a class="<?php if ( edd_get_cart_quantity() ) { echo 'cart-has-items'; } ?>" href="<?php echo esc_url( edd_get_checkout_uri() ); ?>">
 				        <i class="fa fa-shopping-cart"></i>
 				        <?php if ( edd_get_cart_quantity() ) : ?>
 				            <span class="edd-cart-quantity"><?php echo edd_get_cart_quantity(); ?></span>

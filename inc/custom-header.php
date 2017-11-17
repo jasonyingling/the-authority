@@ -36,6 +36,8 @@ if ( ! function_exists( 'the_authority_header_style' ) ) :
 function the_authority_header_style() {
 	$header_text_color = get_header_textcolor();
 
+	$mobile_width = get_theme_mod( 'show_mobile_nav', 960 );
+
 	$header_background = get_theme_mod( 'header_background' );
 	$primary_link = get_theme_mod( 'primary_link' );
 	$primary_hover = get_theme_mod( 'primary_hover' );
@@ -56,6 +58,7 @@ function the_authority_header_style() {
 
 	?>
 	<style type="text/css">
+
 	<?php
 		if ( $primary_link ) :
 	?>
@@ -272,6 +275,19 @@ function the_authority_header_style() {
 	<?php
 		endif;
 	?>
+
+	<?php
+		if ( ! empty( $mobile_width ) ) :
+	?>
+	@media screen and (max-width: <?php echo esc_attr( $mobile_width ) ?>px) {
+		.hamburger-button {
+		    display: block;
+		}
+		.main-navigation {
+			display: none;
+		}
+	}
+	<?php endif; ?>
 
 	</style>
 	<?php

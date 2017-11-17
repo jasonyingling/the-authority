@@ -52,6 +52,13 @@ function the_authority_customize_register( $wp_customize ) {
 		'priority'			=> '4'
 	) );
 
+	// Add Navigation width setting
+	$wp_customize->add_setting( 'show_mobile_nav', array(
+		'default' => '960',
+		'sanitize_callback' => 'absint',
+		'transport' => 'refresh',
+	) );
+
 	// Add Color Settings
 	$wp_customize->add_setting( 'primary_link', array(
 	 	'default' => '#f46060',
@@ -145,6 +152,18 @@ function the_authority_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'sanitize_hex_color',
 		'transport'			=> 'postMessage',
 	 ) );
+
+	// Add Navigation Width Control
+	$wp_customize->add_control( 'show_mobile_nav', array(
+		'type'			=> 'number',
+		'priority'		=> 50,
+		'section'		=> 'title_tagline',
+		'label'			=> __( 'Mobile Navigation Control', 'the-authority' ),
+		'description'	=> __( 'Set the width at which point the mobile menu button shows and the main navigation disappears.', 'the-authortiy' ),
+		'input_attrs' => array(
+            'min'   => 320,
+        ),
+	) );
 
 	// Add Color Controls
 	$wp_customize->add_control(

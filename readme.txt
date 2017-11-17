@@ -4,8 +4,8 @@ Contributors: yingling017
 Tags: translation-ready, custom-background, theme-options, custom-menu, threaded-comments, editor-style, featured-images, one-column, two-column, right-sidebar, footer-widgets, custom-logo
 
 Requires at least: 4.0
-Tested up to: 4.8.1
-Stable tag: 1.0.5
+Tested up to: 4.9
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,10 @@ Easy Footnotes
 And many more
 
 == Changelog ==
+
+= 1.0.6 - November 17, 2017 =
+* Fixed bug with EDD cart link not printing
+* Added customizer option for controlling when mobile navigation appears
 
 = 1.0.5 - October 6, 2017 =
 Removing wpcom.php. Adding unminified mmenu. Escapting custom-header.php. Removing the_authority_admin_header_image() and the_authority_admin_header_style(). Returning excerpt and more content if in the admin screen.
