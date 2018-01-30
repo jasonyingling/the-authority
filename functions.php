@@ -77,6 +77,9 @@ function the_authority_setup() {
 		'default-image' => '',
 	) ) );
 
+	// Gutenberg wide images
+	add_theme_support( 'align-wide' );
+
 }
 endif; // the_authority_setup
 add_action( 'after_setup_theme', 'the_authority_setup' );

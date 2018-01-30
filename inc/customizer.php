@@ -60,6 +60,12 @@ function the_authority_customize_register( $wp_customize ) {
 	) );
 
 	// Add Color Settings
+	$wp_customize->add_setting( 'aty_primary_color', array(
+	 	'default' => '#f46060',
+		'sanitize_callback' => 'sanitize_hex_color',
+		'transport'			=> 'refresh',
+	 ) );
+
 	$wp_customize->add_setting( 'primary_link', array(
 	 	'default' => '#f46060',
 		'sanitize_callback' => 'sanitize_hex_color',
@@ -244,7 +250,17 @@ function the_authority_customize_register( $wp_customize ) {
 	);
 
 
-
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control (
+		$wp_customize,
+		'aty_primary_color',
+		 array(
+			 'label'		=> __( 'Primary Color', 'the-authority' ),
+			 'description'	=> __( 'Set the primary color. This is used throughout the theme in various pages that don\'t have specific controls.'),
+			 'section'		=> 'site_colors',
+			 'settings'		=> 'aty_primary_color'
+		 ) )
+	);
 
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control (

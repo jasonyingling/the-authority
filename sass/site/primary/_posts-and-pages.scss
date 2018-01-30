@@ -2,10 +2,6 @@
 	display: block;
 }
 
-.hentry {
-	margin: 0 0 3em;
-}
-
 .aty-featured-image {
 	text-align: center;
 }
@@ -14,6 +10,15 @@
 	.entry-header {
 		text-align: center;
 		margin-bottom: 3rem;
+	}
+}
+
+.content-area-sidebar {
+	.aty-featured-image {
+		margin-top: 1em;
+	}
+	article {
+		@include clearfix;
 	}
 }
 
@@ -58,6 +63,15 @@
 	display: inline;
 }
 
+.banner-sidebar {
+	padding-top: 40px;
+}
+
+.comments-area {
+	max-width: 43rem;
+	margin: 1em auto 0;
+}
+
 .content-area-full {
 
 	&.content-full-width,
@@ -66,8 +80,7 @@
 		.entry-content,
 		.entry-summary,
 		.entry-footer,
-		.post-navigation,
-		.comments-area {
+		.post-navigation {
 			max-width: 100%;
 		}
 	}
@@ -87,8 +100,7 @@
 	.entry-content,
 	.entry-summary,
 	.entry-footer,
-	.post-navigation,
-	.comments-area {
+	.post-navigation {
 		max-width: 43rem;
 		margin: 1em auto 0;
 	}
@@ -133,16 +145,6 @@
 			padding: 6px;
 			width: 400px;
 		}
-	}
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1em 0 0;
-
-	> *:first-child {
-		margin-top: 0;
 	}
 }
 

@@ -3,7 +3,8 @@
  * The template for displaying all pages.
  *
  * Template name: Landing Page
- *
+ * Template Post Type: post, page, jetpack-testimonial, jetpack-portfolio
+ * 
  * This template consists of a header, content, and footer
  * with no padding between. This can be useful if using page
  * builder plugins like Divi to create custom landing pages.

@@ -39,6 +39,7 @@ function the_authority_header_style() {
 	$mobile_width = get_theme_mod( 'show_mobile_nav', 960 );
 
 	$header_background = get_theme_mod( 'header_background' );
+	$aty_primary_color = get_theme_mod( 'aty_primary_color' );
 	$primary_link = get_theme_mod( 'primary_link' );
 	$primary_hover = get_theme_mod( 'primary_hover' );
 	$secondary_shade = get_theme_mod( 'secondary_shade' );
@@ -58,6 +59,25 @@ function the_authority_header_style() {
 
 	?>
 	<style type="text/css">
+
+	<?php
+		if ( $aty_primary_color ) :
+	?>
+		.aty-post-overlay {
+			background: <?php echo esc_attr( $aty_primary_color ); ?>;
+		}
+		.aty-meet:hover::before {
+			border-top-color: <?php echo esc_attr( $aty_primary_color ); ?>;
+			border-right-color: <?php echo esc_attr( $aty_primary_color ); ?>;
+		}
+
+		.aty-meet:hover::after {
+			border-bottom-color: <?php echo esc_attr( $aty_primary_color ); ?>;
+			border-left-color: <?php echo esc_attr( $aty_primary_color ); ?>;
+		}
+	<?php
+		endif;
+	?>
 
 	<?php
 		if ( $primary_link ) :

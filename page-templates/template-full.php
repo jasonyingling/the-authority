@@ -3,6 +3,7 @@
  * The template for displaying all pages.
  *
  * Template name: Page Full Width
+ * Template Post Type: post, page, jetpack-testimonial, jetpack-portfolio
  *
  * This template can be used to create a page that spans
  * the full width of the site container.
@@ -19,7 +20,7 @@
 
  		<?php while ( have_posts() ) : the_post(); ?>
 
- 			<?php get_template_part( 'template-parts/content', 'page' ); ?>
+ 			<?php get_template_part( 'template-parts/content', 'full' ); ?>
 
             <?php
 				// If comments are open or we have at least one comment, load up the comment template.

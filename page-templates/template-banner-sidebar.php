@@ -2,7 +2,8 @@
 /**
  * The template for displaying all pages.
  *
- * Template name: Page with Sidebar
+ * Template name: Full Banner and Sidebar
+ * Template Post Type: post, page, jetpack-testimonial, jetpack-portfolio
  *
  * This template can be used to create a page
  * with a sidebar.
@@ -14,14 +15,12 @@
 
  get_header(); ?>
 
- <div class="container">
-
- 	<div id="primary" class="content-area">
+ 	<div id="primary" class="content-area-full content-full-width">
  		<main id="main" class="site-main" role="main">
 
  			<?php while ( have_posts() ) : the_post(); ?>
 
- 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+ 				<?php get_template_part( 'template-parts/content', 'banner-sidebar' ); ?>
 
                 <?php
     				// If comments are open or we have at least one comment, load up the comment template.
@@ -37,7 +36,4 @@
  		</main><!-- #main -->
  	</div><!-- #primary -->
 
-    <?php get_sidebar(); ?>
-
- </div>
  <?php get_footer(); ?>

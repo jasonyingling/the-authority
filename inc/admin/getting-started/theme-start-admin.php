@@ -155,7 +155,7 @@ class The_Authority_Theme_Updater_Admin {
 
 						<!-- Output the feed -->
 						<?php if ( is_wp_error( $rss ) || empty( $rss_items_check ) ) : ?>
-							<p><?php esc_html_e( 'This help file feed seems to be temporarily down. You can always view the help file on Array in the meantime.', 'the-authority' ); ?> <a href="https://jasonyingling.me/help/<?php echo $theme_name_lower; ?>" title="View help file"><?php echo $theme['Name']; ?> <?php esc_html_e( 'Help File &rarr;', 'the-authority' ); ?></a></p>
+							<p><?php esc_html_e( 'This help file feed seems to be temporarily down. You can always view the help file online in the meantime.', 'the-authority' ); ?> <a href="https://jasonyingling.me/help/<?php echo $theme_name_lower; ?>" title="View help file"><?php echo $theme['Name']; ?> <?php esc_html_e( 'Help File &rarr;', 'the-authority' ); ?></a></p>
 						<?php else : ?>
 							<?php foreach ( $rss_items as $item ) : ?>
 								<?php echo $item->get_content(); ?>

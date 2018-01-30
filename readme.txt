@@ -4,8 +4,8 @@ Contributors: yingling017
 Tags: translation-ready, custom-background, theme-options, custom-menu, threaded-comments, editor-style, featured-images, one-column, two-column, right-sidebar, footer-widgets, custom-logo
 
 Requires at least: 4.0
-Tested up to: 4.9
-Stable tag: 1.0.7
+Tested up to: 4.9.2
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,14 @@ Easy Footnotes
 And many more
 
 == Changelog ==
+
+= 1.1.0 - January 29, 2018 =
+* Introducing The Authority Pro with WooCommerce, Testimonial, and Portfolio support
+* Updated Font Awesome fonts
+* Improved styles throughout site
+* Improved page template functionality
+* Added support for custom post templates to include a sidebar, full-width, and landing page
+* General bug fixes
 
 = 1.0.7 - November 17, 2017 =
 * Fixed a typo in a text-domain
