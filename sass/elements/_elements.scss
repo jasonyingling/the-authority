@@ -63,6 +63,13 @@ figure,
 	margin-bottom: 1.5em;
 }
 
+.has-post-thumbnail {
+	figure {
+		margin-top: 0;
+		margin-bottom: 0.5em;
+	}
+}
+
 .content-area-full {
 	.alignfull,
 	.alignwide {

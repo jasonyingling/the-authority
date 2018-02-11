@@ -63,7 +63,6 @@ function the_authority_entry_footer() {
 		}
 	}
 
-	edit_post_link( esc_html__( 'Edit', 'the-authority' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 

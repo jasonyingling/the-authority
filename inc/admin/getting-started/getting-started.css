@@ -207,6 +207,10 @@
 	margin-bottom: 0;
 }
 
+.getting-started .panel-aside h2 {
+    margin-top: 0;
+}
+
 .getting-started .panel-aside img {
     max-width: 100%;
     margin-bottom: 20px;

@@ -256,7 +256,7 @@ function the_authority_customize_register( $wp_customize ) {
 		'aty_primary_color',
 		 array(
 			 'label'		=> __( 'Primary Color', 'the-authority' ),
-			 'description'	=> __( 'Set the primary color. This is used throughout the theme in various pages that don\'t have specific controls.'),
+			 'description'	=> __( 'Set the primary color. This is used throughout the theme in various pages that don\'t have specific controls.', 'the-authority'),
 			 'section'		=> 'site_colors',
 			 'settings'		=> 'aty_primary_color'
 		 ) )

@@ -23,7 +23,16 @@
 	padding: 40px 0;
 }
 
-.site-main {
+.single-post {
+	.site-content {
+		padding-bottom: 0;
+	}
+}
+
+.page-template-template-landing {
+	.site-content {
+		padding: 0;
+	}
 }
 
 .site-content .widget-area {

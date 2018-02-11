@@ -4,8 +4,8 @@ Contributors: yingling017
 Tags: translation-ready, custom-background, theme-options, custom-menu, threaded-comments, editor-style, featured-images, one-column, two-column, right-sidebar, footer-widgets, custom-logo
 
 Requires at least: 4.0
-Tested up to: 4.9.2
-Stable tag: 1.1.0
+Tested up to: 4.9.4
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,7 +36,12 @@ And many more
 
 == Changelog ==
 
-= 1.1.0 - January 29, 2018 =
+= 1.1.1 - February 10, 2018 =
+* Minor bug fixes
+* Updating theme and author URIs to reflect new theme home on Themes.Pizza
+* Updating translation .pot file
+
+= 1.1.0 - February 9, 2018 =
 * Introducing The Authority Pro with WooCommerce, Testimonial, and Portfolio support
 * Updated Font Awesome fonts
 * Improved styles throughout site

@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: The Authority\n"
-"POT-Creation-Date: 2018-01-29 17:55-0600\n"
-"PO-Revision-Date: 2018-01-29 17:55-0600\n"
+"POT-Creation-Date: 2018-02-10 11:09-0600\n"
+"PO-Revision-Date: 2018-02-10 11:08-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -124,64 +124,101 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: inc/admin/getting-started/theme-start-admin.php:17
+#: inc/admin/getting-started/theme-start-admin.php:18
 #, php-format
 msgid ""
 "Thanks for using %s. To get the most out of your theme check the <a href=\"%s"
-"\">Getting Started</a> page."
+"\">Getting Started</a> page. For even more features and WooCommerce support "
+"go <a href=\"%s\">Pro</a>."
 msgstr ""
 
 #. Theme Name of the plugin/theme
-#: inc/admin/getting-started/theme-start-admin.php:17
+#: inc/admin/getting-started/theme-start-admin.php:18
 #: inc/admin/getting-started/theme-start.php:21
 msgid "The Authority"
 msgstr ""
 
+#: inc/admin/getting-started/theme-start-admin.php:19
+#, php-format
+msgid ""
+"Sign up to get important product updates and information from <a href=\"%s"
+"\">Themes.Pizza</a>."
+msgstr ""
+
 #. Author of the plugin/theme
-#: inc/admin/getting-started/theme-start-admin.php:66
+#: inc/admin/getting-started/theme-start-admin.php:105
 #: inc/admin/getting-started/theme-start.php:24
 msgid "Jason Yingling"
 msgstr ""
 
-#: inc/admin/getting-started/theme-start-admin.php:126
+#: inc/admin/getting-started/theme-start-admin.php:165
 #, php-format
 msgid "Getting started with %1$s"
 msgstr ""
 
-#: inc/admin/getting-started/theme-start-admin.php:128
+#: inc/admin/getting-started/theme-start-admin.php:167
 #, php-format
 msgid "Everything you need to get the most out of %s can be found here."
 msgstr ""
 
-#: inc/admin/getting-started/theme-start-admin.php:134
+#: inc/admin/getting-started/theme-start-admin.php:173
+#: inc/admin/getting-started/theme-start-admin.php:242
+msgid "Go Pro"
+msgstr ""
+
+#: inc/admin/getting-started/theme-start-admin.php:174
 msgid "Help File"
 msgstr ""
 
-#: inc/admin/getting-started/theme-start-admin.php:158
+#: inc/admin/getting-started/theme-start-admin.php:198
+msgid "Get even more out of your theme with The Authority Pro."
+msgstr ""
+
+#: inc/admin/getting-started/theme-start-admin.php:198
+msgid "Go Pro &rarr;"
+msgstr ""
+
+#: inc/admin/getting-started/theme-start-admin.php:200
+#: inc/admin/getting-started/theme-start-admin.php:246
+msgid "Drive action with a banner on your homepage."
+msgstr ""
+
+#: inc/admin/getting-started/theme-start-admin.php:201
+#: inc/admin/getting-started/theme-start-admin.php:247
+msgid "Show off what you do with custom sections."
+msgstr ""
+
+#: inc/admin/getting-started/theme-start-admin.php:202
+#: inc/admin/getting-started/theme-start-admin.php:248
+msgid "Improved styles for portfolios and testimonials."
+msgstr ""
+
+#: inc/admin/getting-started/theme-start-admin.php:203
+#: inc/admin/getting-started/theme-start-admin.php:249
+msgid "Start selling with full WooCommerce support."
+msgstr ""
+
+#: inc/admin/getting-started/theme-start-admin.php:231
 msgid ""
 "This help file feed seems to be temporarily down. You can always view the "
 "help file online in the meantime."
 msgstr ""
 
-#: inc/admin/getting-started/theme-start-admin.php:158
+#: inc/admin/getting-started/theme-start-admin.php:231
 msgid "Help File &rarr;"
 msgstr ""
 
-#: inc/admin/getting-started/theme-start-admin.php:169
-msgid "Introducing Aurora"
-msgstr ""
-
-#: inc/admin/getting-started/theme-start-admin.php:170
-msgid ""
-"A bold and beautiful WordPress theme for businesses and creators to start "
-"selling physical and digital goods via WooCommerce."
-msgstr ""
-
-#: inc/admin/getting-started/theme-start-admin.php:171
+#: inc/admin/getting-started/theme-start-admin.php:243
 msgid "Aurora WordPress Theme"
 msgstr ""
 
-#: inc/admin/getting-started/theme-start-admin.php:172
+#: inc/admin/getting-started/theme-start-admin.php:244
+msgid ""
+"Get even more features to show your authority by upgrading to The Authority "
+"Pro."
+msgstr ""
+
+#: inc/admin/getting-started/theme-start-admin.php:251
 msgid "Get it now"
 msgstr ""
 
@@ -320,10 +357,6 @@ msgstr ""
 msgid "%1$sTagged%2$s %3$s"
 msgstr ""
 
-#: inc/template-tags.php:66
-msgid "Edit"
-msgstr ""
-
 #: search.php:19
 #, php-format
 msgid "Search Results for: %s"
@@ -357,7 +390,7 @@ msgid "Continue Reading"
 msgstr ""
 
 #: template-parts/content-banner-sidebar.php:38
-#: template-parts/content-full.php:35 template-parts/content-page.php:36
+#: template-parts/content-full.php:35 template-parts/content-page.php:38
 #: template-parts/content-sidebar.php:38 template-parts/content-single.php:49
 #: template-parts/content.php:40
 msgid "Pages:"
@@ -386,7 +419,7 @@ msgid ""
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://jasonyingling.me/wordpress-themes/the-authority/"
+msgid "https://www.themes.pizza/downloads/the-authority-pro/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -399,7 +432,7 @@ msgid ""
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://jasonyingling.me"
+msgid "https://themes.pizza"
 msgstr ""
 
 #. Template Name of the plugin/theme
