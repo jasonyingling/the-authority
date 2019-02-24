@@ -38,12 +38,12 @@
 				</div><!-- .site-search -->
 				<?php if ( class_exists( 'Easy_Digital_Downloads' ) ) : ?>
 				<div class="aty-edd-cart">
-				    <a class="<?php if ( edd_get_cart_quantity() ) { echo 'cart-has-items'; } ?>" href="<?php echo esc_url( edd_get_checkout_uri() ); ?>">
-				        <i class="fa fa-shopping-cart"></i>
-				        <?php if ( edd_get_cart_quantity() ) : ?>
-				            <span class="edd-cart-quantity"><?php echo edd_get_cart_quantity(); ?></span>
-				        <?php endif; ?>
-				    </a>
+					<a class="<?php if ( edd_get_cart_quantity() ) { echo 'cart-has-items'; } ?>" href="<?php echo esc_url( edd_get_checkout_uri() ); ?>">
+						<i class="fa fa-shopping-cart"></i>
+						<?php if ( edd_get_cart_quantity() ) : ?>
+							<span class="edd-cart-quantity"><?php echo edd_get_cart_quantity(); ?></span>
+						<?php endif; ?>
+					</a>
 				</div><!-- .site-search -->
 				<?php endif; ?>
 			</div>
@@ -60,7 +60,7 @@
 		<div class="container">
 			<div class="site-branding">
 				<?php the_authority_the_custom_logo(); ?>
-				<?php if ( is_front_page() && is_home() ) : ?>
+				<?php if ( is_home() ) : ?>
 					<h1 id="site-title" class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php else : ?>
 					<p id="site-title" class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>

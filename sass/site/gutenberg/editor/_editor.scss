@@ -1,0 +1,29 @@
+/* Main column width */
+body.gutenberg-editor-page .editor-post-title__block,
+body.gutenberg-editor-page .editor-default-block-appender,
+body.gutenberg-editor-page .editor-block-list__block {
+    max-width: 700px;
+}
+
+/* Width of "wide" blocks */
+body.gutenberg-editor-page .editor-block-list__block[data-align="wide"] {
+    max-width: $size__content-large;
+}
+
+body.gutenberg-editor-page .editor-block-list__block[data-align="full"] {
+    max-width: $size__content-xlarge;
+}
+
+.editor-styles-wrapper {
+
+    /*--------------------------------------------------------------
+    # Copy Styles
+    --------------------------------------------------------------*/
+    @import 'copy';
+
+    /*--------------------------------------------------------------
+    # Block Styles
+    --------------------------------------------------------------*/
+    @import 'core-blocks';
+
+}

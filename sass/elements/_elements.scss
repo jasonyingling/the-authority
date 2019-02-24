@@ -70,29 +70,6 @@ figure,
 	}
 }
 
-.content-area-full {
-	.alignfull,
-	.alignwide {
-		width: 100vw;
-		position: relative;
-		left: 50%;
-		right: 50%;
-		margin-left: -50vw;
-		margin-right: -50vw;
-		text-align: center;
-
-		img, iframe {
-			width: 100%;
-		}
-	}
-
-	.alignwide {
-		img {
-			max-width: 1024px;
-		}
-	}
-}
-
 @import "lists";
 
 img {

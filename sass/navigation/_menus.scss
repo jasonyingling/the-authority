@@ -24,10 +24,6 @@
 	clear: both;
 	display: block;
 
-	@include media($break960) {
-		display: none;
-	}
-
 	.callout-nav {
 		padding: 0 20px;
 		//background: $color__primaryShade;
@@ -326,17 +322,6 @@ Hamburger button
     z-index: 4;
 	display: none;
 	position: relative;;
-	//top: 50%;
-	//right: 0;
-
-	@include media($break960) {
-		display: block;
-		//right: 10px;
-	}
-
-	@include media($mobile) {
-		//margin-top: -20px;
-	}
 
 	span,
 	&:before,

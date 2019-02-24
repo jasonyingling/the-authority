@@ -178,7 +178,7 @@ add_action( 'widgets_init', 'the_authority_widgets_init' );
  * Enqueue scripts and styles.
  */
 function the_authority_scripts() {
-	wp_enqueue_style( 'the-authority-style', get_stylesheet_uri(), array(), '20170823' );
+	wp_enqueue_style( 'the-authority-style', get_stylesheet_uri(), array(), '20180327' );
 
 	wp_enqueue_style( 'the-authority-print', get_template_directory_uri() . '/print.css', array(), '20170823', 'print' );
 

@@ -4,8 +4,8 @@ Contributors: yingling017
 Tags: translation-ready, custom-background, theme-options, custom-menu, threaded-comments, editor-style, featured-images, one-column, two-column, right-sidebar, footer-widgets, custom-logo
 
 Requires at least: 4.0
-Tested up to: 4.9.4
-Stable tag: 1.1.1
+Tested up to: 5.1
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,17 @@ Easy Footnotes
 And many more
 
 == Changelog ==
+
+= 1.1.4 - February 23, 2019 =
+* Removing unneeded conditional check from content-page.php
+
+= 1.1.3 - December 2, 2018 =
+* Improving Gutenberg block frontend styles. Editor styles coming soon.
+
+= 1.1.2 = March 27, 2018 =
+* Fixing bug when setting width to display mobile menu display in customizer below 960
+* Bug fixes
+* Including resources for help file in theme
 
 = 1.1.1 - February 10, 2018 =
 * Minor bug fixes
@@ -85,3 +96,9 @@ Removing wpcom.php. Adding unminified mmenu. Escapting custom-header.php. Removi
 * Font Awesome Code License, MIT
 * Bourbon © 2011-2015 thoughtbot, inc.
 * Bourbon.Neat © 2011-2015 thoughtbot, inc.
+
+fontawesome-webfont.eot, fontawesome-webfont.svg, fontawesome-webfont.ttf, fontawesome-webfont.woff, fontawesome-webfont.woff2, FontAwesome.otf © 2017 Font Awesome, MIT
+
+jquery.mmenu.all.js, jquery.mmenu.min.js, _mmenu.scss © 2015 Fred Heusschen, MIT
+
+theme-start-admin.php, theme-start.php © 2018 Sandhills Development, GPLv2

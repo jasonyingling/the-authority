@@ -26,7 +26,7 @@ $updater = new The_Authority_Theme_Updater_Admin(
 
 	// Strings
 	$strings = array(
-		'theme-start'    => __( 'Getting Started', 'the-authority' ),
+		'theme-start'    => __( 'Theme Setup', 'the-authority' ),
 	)
 
 );

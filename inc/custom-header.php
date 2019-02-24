@@ -91,7 +91,8 @@ function the_authority_header_style() {
 		.main-navigation .callout-nav, .widget_calendar thead, button, input[type="button"], input[type="reset"], input[type="submit"], .widget_archive ul a:hover, .widget_categories ul a:hover, .site-search-dropdown button {
 			background: <?php echo esc_attr( $primary_link ); ?>;
 		}
-		div.cat-links a:hover, div.cat-links a:focus {
+		div.cat-links a:hover, div.cat-links a:focus,
+		.wp-block-button__link:not(.has-background) {
 			background-color: <?php echo esc_attr( $primary_link ); ?>;
 		}
 	<?php
@@ -104,7 +105,10 @@ function the_authority_header_style() {
 		a:hover, a:focus {
 			color: <?php echo esc_attr( $primary_hover ); ?>;
 		}
-		.main-navigation .callout-nav:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .site-search-dropdown button:hover {
+		.main-navigation .callout-nav:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .site-search-dropdown button:hover,
+		.wp-block-button__link:not(.has-background):hover,
+		.wp-block-button__link:not(.has-background):active,
+		.wp-block-button__link:not(.has-background):focus {
 			background: <?php echo esc_attr( $primary_hover ); ?>;
 		}
 	<?php
